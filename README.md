@@ -76,8 +76,8 @@ refresher, the lab, then open Q&A.
 
 | # | Session | What you'll practice |
 |---|---------|----------------------|
-| 1 | **[Supply Chain / Logistics](sessions/Session_1_Supply_Chain_Logistics.md)** | Read an order/shipment export, spot delays and exceptions, decide who owns the next step, and build status briefings + escalation prompts. |
-| 2 | **[Marketing & Creative](sessions/Session_2_Marketing_and_Creative.md)** | Build a campaign brief with Researcher, draft an executive presentation, and practice brand-safe prompting for a bottle launch. |
+| 1 | **[Supply Chain / Logistics](sessions/Supply_Chain_Logistics.md)** | Read an order/shipment export, spot delays and exceptions, decide who owns the next step, and build status briefings + escalation prompts. |
+| 2 | **[Marketing & Creative](sessions/Marketing_and_Creative.md)** | Build a campaign brief with Researcher, draft an executive presentation, and practice brand-safe prompting for a bottle launch. |
 | 3 | **Finance** | Review a reporting pack for drivers and anomalies, QA a spreadsheet, and turn findings into an executive finance memo — all with human sign-off. |
 | 4 | **Customer Service (ACs)** | Summarize long customer threads, build PTO handoffs, compare reports into an exception list, and draft customer-ready responses. |
 | 5 | **Design & Engineering** | Analyze an opportunity/CRM export for aging and trends, flag data-quality gaps, and write a leadership summary with stated assumptions. |
