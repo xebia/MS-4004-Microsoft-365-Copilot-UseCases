@@ -1,0 +1,11 @@
+SKU,ProductName,Category,Size,Color,UnitCostUSD
+SKU-GB12,12 oz Amber Glass Bottle,Glass,12 oz,Amber,0.42
+SKU-GB16,16 oz Flint Glass Bottle,Glass,16 oz,Clear,0.55
+SKU-GB22,22 oz Amber Glass Bottle,Glass,22 oz,Amber,0.78
+SKU-PET500,500 mL PET Bottle,PET,500 mL,Clear,0.15
+SKU-PET1L,1 L PET Bottle,PET,1 L,Clear,0.22
+SKU-CAP38,38 mm Screw Cap,Closure,38 mm,Black,0.03
+SKU-CAP28,28 mm Sports Cap,Closure,28 mm,White,0.05
+SKU-CROWN,26 mm Crown Cap,Closure,26 mm,Gold,0.02
+SKU-BOX12,12-Count Shipper Carton,Packaging,N/A,Kraft,0.35
+SKU-LABEL,Pressure-Sensitive Label Roll,Packaging,N/A,White,0.08

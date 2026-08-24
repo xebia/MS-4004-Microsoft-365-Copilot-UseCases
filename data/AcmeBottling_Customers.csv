@@ -1,0 +1,9 @@
+CustomerID,CustomerName,Segment,Region,Location,AccountManager,PaymentTerms,Tier
+CUST-1001,Cascade Craft Beverages,Brewery,West,"Portland, OR",Priya Shah,Net 30,A
+CUST-1002,Sunrise Juice Co.,Juice,West,"Fresno, CA",Marcus Lee,Net 45,A
+CUST-1003,Northwind Distilling,Spirits,Midwest,"Milwaukee, WI",Dana Kowalski,Net 30,B
+CUST-1004,Blue Ridge Springs,Water,East,"Asheville, NC",Tom Alvarez,Net 60,A
+CUST-1005,Prairie Kombucha,Kombucha,Midwest,"Des Moines, IA",Elena Fisher,Net 30,C
+CUST-1006,Gulf Coast Sodas,Soda,South,"Tampa, FL",Ray Nguyen,Net 45,B
+CUST-1007,Summit Sparkling,Water,West,"Denver, CO",Priya Shah,Net 30,A
+CUST-1008,Harbor Cold Brew,Coffee,East,"Boston, MA",Tom Alvarez,Net 30,B

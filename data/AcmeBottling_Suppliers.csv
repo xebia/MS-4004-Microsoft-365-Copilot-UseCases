@@ -1,0 +1,6 @@
+SupplierID,SupplierName,Supplies,Location,SupplierStatus,QualityScore
+SUP-201,Meridian Glassworks,Glass resin & molds,"Toledo, OH",On time,4.6
+SUP-202,PolyForm Resins,PET resin,"Houston, TX",At risk,3.9
+SUP-203,CapTech Industries,Closures,"Akron, OH",On time,4.4
+SUP-204,GreenLeaf Packaging,Cartons & labels,"Green Bay, WI",Delayed,3.2
+SUP-205,Clearview Colorants,Colorants & tint,"Charlotte, NC",On time,4.1
