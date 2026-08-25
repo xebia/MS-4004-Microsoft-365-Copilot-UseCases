@@ -41,7 +41,7 @@ That means:
 - **Realistic starting point.** Most labs begin with a spreadsheet "exported from Acme's
   ERP/CRM," just like your real Monday morning.
 
-**Master files everyone shares** (in `company-kit/data/`):
+**Master files everyone shares** (in `data/`):
 
 | File | What it is |
 |------|------------|
@@ -51,6 +51,20 @@ That means:
 | `AcmeBottling_Products.csv` | Product catalog (SKUs, sizes, materials, unit costs) |
 | `AcmeBottling_Suppliers.csv` | Suppliers, what they supply, on-time status, quality scores |
 | `AcmeBottling_Inventory.csv` | On-hand, committed, available, reorder flags |
+
+**Role-specific files** (also in `data/`, used by one session each):
+
+| File | Session |
+|------|---------|
+| `AcmeBottling_Campaign_Goals.md` | 2 — Marketing & Creative |
+| `finance_monthly_actuals.xlsx` | 3 — Finance |
+| `finance_spreadsheet_with_anomalies.xlsx` | 3 — Finance |
+| `leadership_audience_profile.docx` | 3 — Finance |
+| `executive_memo_format.docx` | 3 — Finance |
+| `role_description.docx` | 6 — Talent / HR |
+| `onboarding_scenario.docx` | 6 — Talent / HR |
+| `skills_list.csv` | 6 — Talent / HR |
+| `employee_comm_brief.docx` | 6 — Talent / HR |
 
 > **Open the `.xlsx` files in Excel as-is — don't convert them to CSV.** Copilot in Excel
 > needs the real workbook to analyze the data. The CSVs are just the raw source.
@@ -72,21 +86,57 @@ thing no session drops.
 
 Delivered in this order. Each lab runs about **60 minutes of hands-on** (up to ~75 min if
 your group wants to go deeper) inside a ~90-minute session — roughly 15 min Copilot
-refresher, the lab, then open Q&A.
+refresher, the lab, then open Q&A. Every lab is two 30-minute exercises with the same
+shape: **find the truth, then act on it.**
 
-| # | Session | What you'll practice |
-|---|---------|----------------------|
-| 1 | **[Supply Chain / Logistics](sessions/Supply_Chain_Logistics.md)** | Read an order/shipment export, spot delays and exceptions, decide who owns the next step, and build status briefings + escalation prompts. |
-| 2 | **[Marketing & Creative](sessions/Marketing_and_Creative.md)** | Build a campaign brief with Researcher, draft an executive presentation, and practice brand-safe prompting for a bottle launch. |
-| 3 | **Finance** | Review a reporting pack for drivers and anomalies, QA a spreadsheet, and turn findings into an executive finance memo — all with human sign-off. |
-| 4 | **Customer Service (ACs)** | Summarize long customer threads, build PTO handoffs, compare reports into an exception list, and draft customer-ready responses. |
-| 5 | **Design & Engineering** | Analyze an opportunity/CRM export for aging and trends, flag data-quality gaps, and write a leadership summary with stated assumptions. |
-| 6 | **Talent / HR** | Create interview guides, onboarding plans, and learning paths, and draft employee communications — with HR-safe guardrails. |
-| 7 | **Legal** | Summarize multi-document contracts, compare clauses against Acme's standard language, and produce an executive legal briefing. |
+- **[`Session 1 — Supply Chain / Logistics`](sessions/MS-4004.X_Supply_Chain_Logistics.md)** —
+  read an ERP order/shipment export for delays, exceptions, and missing data, decide who
+  owns each next step (Acme, supplier, customer, carrier), then produce a manager status
+  briefing in Word and a supplier escalation email in Outlook. Includes the
+  orders/shipments export and the master reference workbook.
+
+- **[`Session 2 — Marketing & Creative`](sessions/MS-4004.X_Marketing_and_Creative.md)** —
+  build a launch campaign brief for the new 500 mL PET bottle with Researcher, write
+  brand-safe copy from approved proof points, draft a 6-slide executive pitch deck and a
+  sales enablement one-pager, then run a brand and usage-rights review pass. Includes the
+  campaign goals brief, product catalog, and customers file.
+
+- **[`Session 3 — Finance`](sessions/MS-4004.X_Finance.md)** — find variance drivers and
+  anomalies in monthly actuals with the Analyst agent, make Copilot show its arithmetic
+  and spot-check it, QA a messy AR aging sheet, then write a one-page CFO memo and a
+  single leadership slide. Includes monthly actuals, an AR aging sheet with planted
+  data-quality issues, the leadership audience profile, and the executive memo format.
+
+- **`Session 4 — Customer Service (ACs)`** *(lab in development)* — summarize a long
+  customer thread, cross-check it against the shipment data, build a PTO handoff, and
+  draft a customer-ready reply. Includes the sample email thread, orders export, and
+  master reference.
+
+- **`Session 5 — Design & Engineering`** *(lab in development)* — analyze a CRM/opportunity
+  export for aging deals and trends, flag data-quality gaps, and write a leadership
+  summary + one slide. Includes a new opportunities export (with intentional messy rows)
+  and the master reference. This one carries Kyle's note that it's the group most likely
+  to raise big agent ideas.
+
+- **[`Session 6 — Talent / HR`](sessions/MS-4004.X_Talent_HR.md)** — turn a Logistics
+  Coordinator requisition into a competency-mapped, bias-checked interview guide, build a
+  30-60-90 onboarding plan from messy manager notes, turn a skills gap into a prioritized
+  learning path, and draft a change announcement in three formats. Includes the role
+  description, onboarding notes, skills list, and change-communication brief.
+
+- **`Session 7 — Legal`** *(lab in development)* — summarize a contract with Researcher,
+  compare it clause-by-clause against Acme's standard-terms playbook, flag missing or
+  non-standard terms, and produce an executive briefing. Includes a sample customer
+  contract and the standard-terms playbook, plus the cite-the-playbook context workaround.
 
 > **Note on IT:** The IT group is a **recap and debrief conversation**, not a hands-on
 > lab. We walk their team through what everyone else learned and flag agent-readiness
 > opportunities. No lab file needed.
+
+> **Still to build:** sessions 4, 5, and 7 need both their lab file in `sessions/` and
+> their artifacts in `data/` — the customer email thread, the CRM/opportunity export with
+> messy rows, the sample customer contract, and the standard-terms playbook. Sessions 1,
+> 2, 3, and 6 are complete and all their data files are in place.
 
 ---
 
@@ -111,4 +161,4 @@ Same company. Same data. Seven jobs. One trusted way to use Copilot.
 You've already had foundational Copilot training and use it regularly. These labs skip
 the basics and get straight into real role scenarios. Each session teaches **only the
 Copilot capabilities that genuinely serve that job** — no feature tours, no filler. See
-the full role → feature-map in [`company-kit/Acme_Bottling_Company_Kit.md`](company-kit/Acme_Bottling_Company_Kit.md).
+the full role → feature-map in [Acme_Bottling_Company_Kit.md](Acme_Bottling_Company_Kit.md).

@@ -48,7 +48,7 @@ GreenLeaf Packaging (delayed), Clearview Colorants.**
 
 ## 3. The master files (shared by all labs)
 
-All live in `company-kit/data/`.
+All live in the `data/` folder of the repo.
 
 | File | Format | Purpose |
 |------|--------|---------|
