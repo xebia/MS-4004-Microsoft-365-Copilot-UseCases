@@ -5,6 +5,10 @@ company, the same people, and the same data, so the curriculum feels like one re
 Trainers: read this once and you'll understand every scenario. Students: you'll meet
 these names and files in your lab.
 
+> **Every lab is standalone.** A learner can take one session and never touch another.
+> This kit is what makes the world consistent *across* them — it isn't a prerequisite for
+> any single lab, and no lab references another by name or number.
+
 ---
 
 ## 1. Company profile
@@ -29,14 +33,27 @@ Everything is invented for training. There is no real customer or company data h
 
 These names appear across labs so the world stays consistent.
 
-| Person | Role at Acme |
-|--------|--------------|
-| Priya Shah | Account Manager (West — Cascade Craft, Summit Sparkling) |
-| Tom Alvarez | Account Manager (East — Blue Ridge Springs, Harbor Cold Brew) |
-| Marcus Lee | Account Manager (West — Sunrise Juice) |
-| Dana Kowalski | Account Manager (Midwest — Northwind Distilling) |
-| Elena Fisher | Account Manager (Midwest — Prairie Kombucha) |
-| Ray Nguyen | Account Manager (South — Gulf Coast Sodas) |
+**Inside Acme**
+
+| Person | Role at Acme | Appears in |
+|--------|--------------|------------|
+| Nora Whitfield | CFO | Finance |
+| Priya Shah | Account Manager (West — Cascade Craft, Summit Sparkling) | Customers data |
+| Tom Alvarez | Account Manager (East — Blue Ridge Springs, Harbor Cold Brew) | Customer Service thread |
+| Marcus Lee | Account Manager (West — Sunrise Juice) | Customers data |
+| Dana Kowalski | Account Manager (Midwest — Northwind Distilling) | Customers data |
+| Elena Fisher | Account Manager (Midwest — Prairie Kombucha) | Customers data |
+| Ray Nguyen | Account Manager (South — Gulf Coast Sodas) | Customers data |
+
+**Customer-side contacts**
+
+| Person | Role | Appears in |
+|--------|------|------------|
+| Sarah Kettner | Procurement, Blue Ridge Springs | Customer Service |
+| Mia Torres | Line Operations, Blue Ridge Springs | Customer Service |
+
+> **Naming rule:** keep first names unique across the cast. If you add a character, check
+> this table first — two people sharing a first name makes a prompt ambiguous.
 
 Key customers: **Cascade Craft Beverages, Sunrise Juice Co., Northwind Distilling, Blue
 Ridge Springs, Prairie Kombucha, Gulf Coast Sodas, Summit Sparkling, Harbor Cold Brew.**
@@ -44,21 +61,44 @@ Ridge Springs, Prairie Kombucha, Gulf Coast Sodas, Summit Sparkling, Harbor Cold
 Key suppliers: **Meridian Glassworks, PolyForm Resins (at risk), CapTech Industries,
 GreenLeaf Packaging (delayed), Clearview Colorants.**
 
+The open hire used in the Talent / HR lab is a **Logistics Coordinator** for the Midwest
+DC.
+
 ---
 
-## 3. The master files (shared by all labs)
+## 3. The data files
 
-All live in the `data/` folder of the repo.
+All live in the `data/` folder of the repo. **Every filename starts with `AcmeBottling_`**
+— keep that convention when you add one.
+
+**Shared across labs**
 
 | File | Format | Purpose |
 |------|--------|---------|
 | `AcmeBottling_Orders_Shipments` | .xlsx / .csv | **The backbone.** Every order with dates, status, delay owner, exceptions. |
-| `AcmeBottling_Master_Reference` | .xlsx | All tables in one workbook (Customers, Products, Suppliers, Inventory, Orders). |
+| `AcmeBottling_Master_Reference` | .xlsx | Six tabs in one workbook: Customers, Products, Suppliers, Inventory, Orders, Opportunities. |
 | `AcmeBottling_Customers` | .csv | Accounts, segments, regions, account managers, terms, tier. |
 | `AcmeBottling_Products` | .csv | SKU catalog, sizes, materials, colors, unit cost. |
 | `AcmeBottling_Suppliers` | .csv | Suppliers, what they supply, on-time status, quality score. |
 | `AcmeBottling_Inventory` | .csv | On-hand, committed, available, reorder flags. |
-| `AcmeBottling_Campaign_Goals` | .md | Marketing launch input brief (Session 2). |
+
+**Role-specific** — used by exactly one lab each
+
+| File | Lab | What it is |
+|------|-----|------------|
+| `AcmeBottling_Campaign_Goals.md` | Marketing & Creative | Launch input brief with approved proof points. |
+| `AcmeBottling_Finance_Monthly_Actuals.xlsx` | Finance | Budget vs actual by region and product line, plus a YTD tab. |
+| `AcmeBottling_Finance_AR_Aging.xlsx` | Finance | AR aging sheet with planted data-quality issues. |
+| `AcmeBottling_Leadership_Audience_Profile.docx` | Finance | Who the memo is for and what "good" looks like. |
+| `AcmeBottling_Executive_Memo_Format.docx` | Finance | The memo structure the Word output must match. |
+| `AcmeBottling_Customer_Thread.md` | Customer Service | Long Blue Ridge Springs email thread about ORD-5006. |
+| `AcmeBottling_Opportunities.xlsx` | Design & Engineering | CRM/opportunity export with intentional messy rows. |
+| `AcmeBottling_Role_Description.docx` | Talent / HR | Logistics Coordinator requisition. |
+| `AcmeBottling_Onboarding_Notes.docx` | Talent / HR | Rough manager notes with a deliberate TBD gap. |
+| `AcmeBottling_Skills_List.csv` | Talent / HR | Current vs target skill levels with priorities. |
+| `AcmeBottling_Employee_Comm_Brief.docx` | Talent / HR | Change-announcement brief with tone notes. |
+| `AcmeBottling_Customer_Contract_Sample.md` | Legal | Sanitized Northwind Distilling supply agreement. |
+| `AcmeBottling_Standard_Terms.md` | Legal | Acme's approved standard-language playbook. |
 
 > **Open the `.xlsx` files in Excel as-is — don't convert to CSV.** Copilot in Excel needs
 > the real workbook. The CSVs are the raw source behind those workbooks.
@@ -82,7 +122,11 @@ All live in the `data/` folder of the repo.
 
 > **The messy rows are intentional.** A few records have missing quantity, promised date,
 > or status. Labs use these to teach the data-quality and validation habit — Copilot
-> should flag what's missing, not quietly fill it in.
+> should flag what's missing, not quietly fill it in. Three files carry planted defects on
+> purpose: `AcmeBottling_Orders_Shipments` (blank quantity / promised date / status),
+> `AcmeBottling_Finance_AR_Aging` (bad dates, mis-bucketed invoice, negative amount,
+> status typo), and `AcmeBottling_Opportunities` (blank Stage, LastActivityDate,
+> EstValueUSD). `AcmeBottling_Onboarding_Notes` carries a deliberate "TBD."
 
 ---
 
@@ -93,13 +137,17 @@ that genuinely help that role.** No feature tours, no filler. This map is the gu
 
 | Session | Copilot capabilities we DO teach | We intentionally SKIP |
 |---------|----------------------------------|-----------------------|
-| **Supply Chain / Logistics** | Copilot in **Excel** (analyze the export), **Copilot Chat/Researcher** (exception analysis, follow-up questions), **Word** (status briefing), **Outlook** (escalation email) | PowerPoint decks, image generation, Loop |
-| **Marketing & Creative** | **Researcher** (campaign brief), **Copilot Chat** (brand-safe copy), **PowerPoint** (exec presentation), **Word** (one-pager) | Deep Excel analysis, heavy image gen (their creative work lives in Adobe) |
-| **Finance** | Copilot in **Excel** (variance, anomaly, QA), **Word** (finance memo), **PowerPoint** (one summary slide) | Researcher-heavy web tasks, Teams meeting features |
-| **Customer Service (ACs)** | **Copilot Chat** (thread summary, exception list), **Outlook** (customer-ready reply, PTO handoff), **Word** (response template) | PowerPoint, Researcher, complex Excel modeling |
-| **Design & Engineering** | Copilot in **Excel** (opportunity aging, trends), **Copilot Chat/Analyst** (data-quality review), **Word/PowerPoint** (leadership summary) | Outlook workflows, image generation |
-| **Talent / HR** | **Researcher** (job analysis), **Copilot Chat** (interview guide, learning path), **Word** (onboarding plan), **Outlook** (employee comms) | Excel-heavy analysis, PowerPoint decks |
-| **Legal** | **Researcher** (multi-doc contract summary + citations), **Copilot Chat** (clause comparison vs. standard language), **Word** (executive briefing) | Excel, PowerPoint, image generation |
+| **Supply Chain / Logistics** | Copilot in **Excel** (analyze the export), **Copilot Chat** (exception analysis, follow-up questions), **Word** (status briefing), **Outlook** (escalation email) | Researcher, PowerPoint decks, image generation |
+| **Marketing & Creative** | **Researcher** (campaign brief), **Copilot Chat** (brand-safe copy, brand-risk pass), **PowerPoint** (exec presentation), **Word** (one-pager) | Deep Excel analysis, heavy image gen (their creative work lives in Adobe) |
+| **Finance** | Copilot in **Excel** (overview, spreadsheet QA), **Copilot Chat / Analyst** (variance and anomaly analysis), **Word** (finance memo), **PowerPoint** (one summary slide) | Researcher, Outlook, Teams meeting features |
+| **Customer Service (ACs)** | **Copilot Chat** (thread summary, claimed-vs-confirmed split, exception list), **Word** (PTO handoff brief), **Outlook** (customer-ready reply), light **Excel** lookup | PowerPoint, Researcher, complex Excel modeling |
+| **Design & Engineering** | Copilot in **Excel** (data-quality review, opportunity aging), **Copilot Chat** (trend analysis), **Word** (leadership summary), **PowerPoint** (one slide) | Outlook workflows, image generation |
+| **Talent / HR** | **Researcher** (role analysis, interview guide, bias pass), **Word** (onboarding plan, employee comms), **Excel** (skills-gap learning path) | Outlook, PowerPoint decks, image generation |
+| **Legal** | **Researcher** (contract summary with citations), **Copilot Chat** (clause comparison vs. standard language, conclusion check), **Word** (executive briefing, talking points) | Excel, PowerPoint, image generation |
+
+> **Every lab also teaches two habits, identically:** a **custom instruction** set in
+> Copilot Chat → Settings → Personalization as Task 1, and a **clean folder / new chat**
+> per customer, campaign, review, or matter.
 
 ---
 

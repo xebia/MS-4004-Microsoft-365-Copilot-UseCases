@@ -133,6 +133,9 @@ That means:
 > **Open the `.xlsx` files in Excel as-is — don't convert them to CSV.** Copilot in Excel
 > needs the real workbook to analyze the data. The CSVs are just the raw source.
 
+*Running or writing a lab? The [company kit](Acme_Bottling_Company_Kit.md) has the full
+cast, the data dictionary, and the role → feature map.*
+
 ---
 
 ## The learning arc across Acme Bottling
