@@ -1,0 +1,9 @@
+Skill Area,Current Level (1-5),Target Level,Priority,Notes
+Order-tracking / ERP exports,2,4,High,Core to daily exception work
+"Excel analysis (pivots, formulas)",2,4,High,Needed for inventory + variance reads
+Written briefings & escalations,3,4,Medium,Clarity for managers/carriers
+Carrier & vendor coordination,2,3,Medium,Build over first 90 days
+Microsoft 365 Copilot basics,1,3,High,Enables all of the above faster
+Inventory & demand concepts,2,4,High,Ties to production schedules
+Cross-functional communication,3,4,Medium,"CS, Design & Eng, Finance"
+Data quality / validation habits,1,4,High,Trust-but-verify mindset
