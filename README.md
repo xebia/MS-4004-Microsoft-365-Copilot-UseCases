@@ -1,6 +1,12 @@
 ![Acme Bottling — Microsoft 365 Copilot Curriculum](images/acme_banner.png)
 
-# Acme Bottling — Microsoft 365 Copilot Curriculum
+# MS-4004.X — Empower your workforce with Microsoft 365 Copilot Use Cases
+### Acme Bottling · role-based lab variants
+
+> Based on the Microsoft course
+> **[MS-4004: Empower your workforce with Microsoft 365 Copilot Use Cases](https://learn.microsoft.com/en-us/training/courses/ms-4004)**.
+> The `.X` sessions here are Acme Bottling variants of that course's use-case exercises —
+> same intent, one shared fictional company.
 
 Welcome. This is the home page for a set of role-based, hands-on Microsoft 365 Copilot
 labs built around one fictional company: **Acme Bottling Co.**
