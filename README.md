@@ -58,16 +58,18 @@ shape: **find the truth, then act on it.**
   single leadership slide. Includes monthly actuals, an AR aging sheet with planted
   data-quality issues, the leadership audience profile, and the executive memo format.
 
-- **`Session 4 — Customer Service (ACs)`** *(lab in development)* — summarize a long
-  customer thread, cross-check it against the shipment data, build a PTO handoff, and
-  draft a customer-ready reply. Includes the sample email thread, orders export, and
-  master reference.
+- **[`Session 4 — Customer Service (ACs)`](sessions/MS-4004.X_Customer_Service.md)** —
+  summarize a long customer thread, split what the customer claimed from what our data
+  confirms, cross-check it against the shipment export, build a PTO handoff, and draft a
+  customer-ready reply with every commitment checked. Includes the sample email thread,
+  orders export, and master reference.
 
-- **`Session 5 — Design & Engineering`** *(lab in development)* — analyze a CRM/opportunity
-  export for aging deals and trends, flag data-quality gaps, and write a leadership
-  summary + one slide. Includes a new opportunities export (with intentional messy rows)
-  and the master reference. This one carries Kyle's note that it's the group most likely
-  to raise big agent ideas.
+- **[`Session 5 — Design & Engineering`](sessions/MS-4004.X_Design_and_Engineering.md)** —
+  analyze a CRM/opportunity export for aging deals and trends, force Copilot to show how
+  many rows each trend rests on, flag data-quality gaps, and write a leadership summary +
+  one slide that keeps its uncertainty. Includes an opportunities export (with intentional
+  messy rows) and the master reference. This one carries Kyle's note that it's the group
+  most likely to raise big agent ideas.
 
 - **[`Session 6 — Talent / HR`](sessions/MS-4004.X_Talent_HR.md)** — turn a Logistics
   Coordinator requisition into a competency-mapped, bias-checked interview guide, build a
@@ -75,19 +77,15 @@ shape: **find the truth, then act on it.**
   learning path, and draft a change announcement in three formats. Includes the role
   description, onboarding notes, skills list, and change-communication brief.
 
-- **`Session 7 — Legal`** *(lab in development)* — summarize a contract with Researcher,
-  compare it clause-by-clause against Acme's standard-terms playbook, flag missing or
-  non-standard terms, and produce an executive briefing. Includes a sample customer
+- **[`Session 7 — Legal`](sessions/MS-4004.X_Legal.md)** — summarize a contract with
+  Researcher and cite every clause, compare it clause-by-clause against Acme's
+  standard-terms playbook, flag missing or non-standard terms with risk levels, and produce
+  an executive briefing plus negotiation talking points. Includes a sanitized customer
   contract and the standard-terms playbook, plus the cite-the-playbook context workaround.
 
 > **Note on IT:** The IT group is a **recap and debrief conversation**, not a hands-on
 > lab. We walk their team through what everyone else learned and flag agent-readiness
 > opportunities. No lab file needed.
-
-> **Still to build:** sessions 4, 5, and 7 need both their lab file in `sessions/` and
-> their artifacts in `data/` — the customer email thread, the CRM/opportunity export with
-> messy rows, the sample customer contract, and the standard-terms playbook. Sessions 1,
-> 2, 3, and 6 are complete and all their data files are in place.
 
 ---
 
@@ -108,7 +106,7 @@ That means:
 | File | What it is |
 |------|------------|
 | `AcmeBottling_Orders_Shipments.xlsx` | The backbone — orders, promised vs. actual dates, status, delay owner, exceptions |
-| `AcmeBottling_Master_Reference.xlsx` | Customers, Products, Suppliers, Inventory, and Orders in one workbook |
+| `AcmeBottling_Master_Reference.xlsx` | Customers, Products, Suppliers, Inventory, Orders, and Opportunities in one workbook |
 | `AcmeBottling_Customers.csv` | Customer accounts, segments, regions, account managers |
 | `AcmeBottling_Products.csv` | Product catalog (SKUs, sizes, materials, unit costs) |
 | `AcmeBottling_Suppliers.csv` | Suppliers, what they supply, on-time status, quality scores |
@@ -119,14 +117,18 @@ That means:
 | File | Session |
 |------|---------|
 | `AcmeBottling_Campaign_Goals.md` | 2 — Marketing & Creative |
-| `finance_monthly_actuals.xlsx` | 3 — Finance |
-| `finance_spreadsheet_with_anomalies.xlsx` | 3 — Finance |
-| `leadership_audience_profile.docx` | 3 — Finance |
-| `executive_memo_format.docx` | 3 — Finance |
-| `role_description.docx` | 6 — Talent / HR |
-| `onboarding_scenario.docx` | 6 — Talent / HR |
-| `skills_list.csv` | 6 — Talent / HR |
-| `employee_comm_brief.docx` | 6 — Talent / HR |
+| `AcmeBottling_Finance_Monthly_Actuals.xlsx` | 3 — Finance |
+| `AcmeBottling_Finance_AR_Aging.xlsx` | 3 — Finance |
+| `AcmeBottling_Leadership_Audience_Profile.docx` | 3 — Finance |
+| `AcmeBottling_Executive_Memo_Format.docx` | 3 — Finance |
+| `AcmeBottling_Customer_Thread.md` | 4 — Customer Service |
+| `AcmeBottling_Opportunities.xlsx` | 5 — Design & Engineering |
+| `AcmeBottling_Role_Description.docx` | 6 — Talent / HR |
+| `AcmeBottling_Onboarding_Notes.docx` | 6 — Talent / HR |
+| `AcmeBottling_Skills_List.csv` | 6 — Talent / HR |
+| `AcmeBottling_Employee_Comm_Brief.docx` | 6 — Talent / HR |
+| `AcmeBottling_Customer_Contract_Sample.md` | 7 — Legal |
+| `AcmeBottling_Standard_Terms.md` | 7 — Legal |
 
 > **Open the `.xlsx` files in Excel as-is — don't convert them to CSV.** Copilot in Excel
 > needs the real workbook to analyze the data. The CSVs are just the raw source.
