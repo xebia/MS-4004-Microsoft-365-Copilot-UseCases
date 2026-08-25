@@ -32,12 +32,9 @@ shipper cartons, and labels.
 Because it's fictional, you can practice freely. Nothing here is real customer or
 company data — it's all made up for training.
 
-## The shared-dataset trick
+## Shared-dataset
 
-Every lab pulls from one **master shipment/order dataset** plus a few linked reference
-files (customers, products, suppliers, inventory). The same delayed order a Supply Chain
-learner investigates is the same customer Finance reviews for payment risk and the same
-product Marketing plans a launch around.
+Every lab pulls from one **master shipment/order dataset** plus a few linked reference files (customers, products, suppliers, inventory). The same delayed order a Supply Chain learner investigates is the same customer Finance reviews for payment risk and the same product Marketing plans a launch around...etc.
 
 That means:
 
