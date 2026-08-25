@@ -29,63 +29,11 @@ beverage brands across the U.S. — breweries, juice and water companies, distil
 and cold-brew makers. Think amber glass bottles, 1-liter PET, screw caps, crown caps,
 shipper cartons, and labels.
 
-Because it's fictional, you can practice freely. Nothing here is real customer or
-company data — it's all made up for training.
-
-## Shared-dataset
-
-Every lab pulls from one **master shipment/order dataset** plus a few linked reference files (customers, products, suppliers, inventory). The same delayed order a Supply Chain learner investigates is the same customer Finance reviews for payment risk and the same product Marketing plans a launch around...etc.
-
-That means:
-
-- **One story, seven angles.** You see Acme Bottling from your role's point of view.
-- **Consistent names and numbers.** Priya Shah, Cascade Craft Beverages, SKU-GB12 — they
-  show up across labs, so the world holds together.
-- **Realistic starting point.** Most labs begin with a spreadsheet "exported from Acme's
-  ERP/CRM," just like your real Monday morning.
-
-**Master files everyone shares** (in `data/`):
-
-| File | What it is |
-|------|------------|
-| `AcmeBottling_Orders_Shipments.xlsx` | The backbone — orders, promised vs. actual dates, status, delay owner, exceptions |
-| `AcmeBottling_Master_Reference.xlsx` | Customers, Products, Suppliers, Inventory, and Orders in one workbook |
-| `AcmeBottling_Customers.csv` | Customer accounts, segments, regions, account managers |
-| `AcmeBottling_Products.csv` | Product catalog (SKUs, sizes, materials, unit costs) |
-| `AcmeBottling_Suppliers.csv` | Suppliers, what they supply, on-time status, quality scores |
-| `AcmeBottling_Inventory.csv` | On-hand, committed, available, reorder flags |
-
-**Role-specific files** (also in `data/`, used by one session each):
-
-| File | Session |
-|------|---------|
-| `AcmeBottling_Campaign_Goals.md` | 2 — Marketing & Creative |
-| `finance_monthly_actuals.xlsx` | 3 — Finance |
-| `finance_spreadsheet_with_anomalies.xlsx` | 3 — Finance |
-| `leadership_audience_profile.docx` | 3 — Finance |
-| `executive_memo_format.docx` | 3 — Finance |
-| `role_description.docx` | 6 — Talent / HR |
-| `onboarding_scenario.docx` | 6 — Talent / HR |
-| `skills_list.csv` | 6 — Talent / HR |
-| `employee_comm_brief.docx` | 6 — Talent / HR |
-
-> **Open the `.xlsx` files in Excel as-is — don't convert them to CSV.** Copilot in Excel
-> needs the real workbook to analyze the data. The CSVs are just the raw source.
+Because it's fictional, you can practice freely. Nothing here is real customer or company data — it's all made up for training.
 
 ---
 
-## The one rule to protect
-
-**Copilot assists. A human validates.**
-
-Every exercise ends the same way: name the source Copilot used, the assumptions it made,
-the risk, and what a person must check before anyone acts on the output. Copilot speeds
-up the work — it doesn't get the final say. This rule is in every lab, and it's the one
-thing no session drops.
-
----
-
-## The seven sessions
+## The Sessions
 
 Delivered in this order. Each lab runs about **60 minutes of hands-on** (up to ~75 min if
 your group wants to go deeper) inside a ~90-minute session — roughly 15 min Copilot
@@ -140,6 +88,48 @@ shape: **find the truth, then act on it.**
 > their artifacts in `data/` — the customer email thread, the CRM/opportunity export with
 > messy rows, the sample customer contract, and the standard-terms playbook. Sessions 1,
 > 2, 3, and 6 are complete and all their data files are in place.
+
+---
+
+## Shared-dataset
+
+Every lab pulls from one **master shipment/order dataset** plus a few linked reference files (customers, products, suppliers, inventory). The same delayed order a Supply Chain learner investigates is the same customer Finance reviews for payment risk and the same product Marketing plans a launch around...etc.
+
+That means:
+
+- **One story, seven angles.** You see Acme Bottling from your role's point of view.
+- **Consistent names and numbers.** Priya Shah, Cascade Craft Beverages, SKU-GB12 — they
+  show up across labs, so the world holds together.
+- **Realistic starting point.** Most labs begin with a spreadsheet "exported from Acme's
+  ERP/CRM," just like your real Monday morning.
+
+**Master files everyone shares** (in `data/`):
+
+| File | What it is |
+|------|------------|
+| `AcmeBottling_Orders_Shipments.xlsx` | The backbone — orders, promised vs. actual dates, status, delay owner, exceptions |
+| `AcmeBottling_Master_Reference.xlsx` | Customers, Products, Suppliers, Inventory, and Orders in one workbook |
+| `AcmeBottling_Customers.csv` | Customer accounts, segments, regions, account managers |
+| `AcmeBottling_Products.csv` | Product catalog (SKUs, sizes, materials, unit costs) |
+| `AcmeBottling_Suppliers.csv` | Suppliers, what they supply, on-time status, quality scores |
+| `AcmeBottling_Inventory.csv` | On-hand, committed, available, reorder flags |
+
+**Role-specific files** (also in `data/`, used by one session each):
+
+| File | Session |
+|------|---------|
+| `AcmeBottling_Campaign_Goals.md` | 2 — Marketing & Creative |
+| `finance_monthly_actuals.xlsx` | 3 — Finance |
+| `finance_spreadsheet_with_anomalies.xlsx` | 3 — Finance |
+| `leadership_audience_profile.docx` | 3 — Finance |
+| `executive_memo_format.docx` | 3 — Finance |
+| `role_description.docx` | 6 — Talent / HR |
+| `onboarding_scenario.docx` | 6 — Talent / HR |
+| `skills_list.csv` | 6 — Talent / HR |
+| `employee_comm_brief.docx` | 6 — Talent / HR |
+
+> **Open the `.xlsx` files in Excel as-is — don't convert them to CSV.** Copilot in Excel
+> needs the real workbook to analyze the data. The CSVs are just the raw source.
 
 ---
 
