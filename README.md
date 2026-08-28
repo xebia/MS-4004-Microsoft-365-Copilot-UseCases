@@ -47,10 +47,12 @@ shape: **find the truth, then act on it.**
   orders/shipments export and the master reference workbook.
 
 - **[`Session 2 — Marketing & Creative`](sessions/MS-4004.X_Marketing_and_Creative.md)** —
-  build a launch campaign brief for the new 500 mL PET bottle with Researcher, write
-  brand-safe copy from approved proof points, draft a 6-slide executive pitch deck and a
-  sales enablement one-pager, then run a brand and usage-rights review pass. Includes the
-  campaign goals brief, product catalog, and customers file.
+  run cited market and competitive research with Researcher, test an approved claim against
+  the product catalog before it ships, build a launch campaign brief for the new 500 mL PET
+  bottle, write brand-safe copy and learn the prompt dials that improve it, draft a 6-slide
+  executive pitch deck and a sales enablement one-pager, write a four-channel launch-event
+  communication set, then run a brand and usage-rights review pass. Includes the campaign
+  goals brief, product catalog, and customers file.
 
 - **[`Session 3 — Finance`](sessions/MS-4004.X_Finance.md)** — find variance drivers and
   anomalies in monthly actuals with the Analyst agent, make Copilot show its arithmetic

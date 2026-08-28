@@ -86,7 +86,7 @@ All live in the `data/` folder of the repo. **Every filename starts with `AcmeBo
 
 | File | Lab | What it is |
 |------|-----|------------|
-| `AcmeBottling_Campaign_Goals.md` | Marketing & Creative | Launch input brief with approved proof points. |
+| `AcmeBottling_Campaign_Goals.md` | Marketing & Creative | Launch input brief with approved proof points — one of which deliberately doesn't reconcile with the product catalog. |
 | `AcmeBottling_Finance_Monthly_Actuals.xlsx` | Finance | Budget vs actual by region and product line, plus a YTD tab. |
 | `AcmeBottling_Finance_AR_Aging.xlsx` | Finance | AR aging sheet with planted data-quality issues. |
 | `AcmeBottling_Leadership_Audience_Profile.docx` | Finance | Who the memo is for and what "good" looks like. |
@@ -127,6 +127,10 @@ All live in the `data/` folder of the repo. **Every filename starts with `AcmeBo
 > `AcmeBottling_Finance_AR_Aging` (bad dates, mis-bucketed invoice, negative amount,
 > status typo), and `AcmeBottling_Opportunities` (blank Stage, LastActivityDate,
 > EstValueUSD). `AcmeBottling_Onboarding_Notes` carries a deliberate "TBD."
+> `AcmeBottling_Campaign_Goals` carries a deliberate **claim mismatch**: the approved proof
+> point says PET500 is "30% below comparable glass (SKU-GB16)," but the catalog shows
+> $0.15 vs $0.55 (≈73% lower). Marketing uses it to teach claim substantiation — flag and
+> escalate, never silently restate an approved claim.
 
 ---
 
@@ -138,7 +142,7 @@ that genuinely help that role.** No feature tours, no filler. This map is the gu
 | Session | Copilot capabilities we DO teach | We intentionally SKIP |
 |---------|----------------------------------|-----------------------|
 | **Supply Chain / Logistics** | Copilot in **Excel** (analyze the export), **Copilot Chat** (exception analysis, follow-up questions), **Word** (status briefing), **Outlook** (escalation email) | Researcher, PowerPoint decks, image generation |
-| **Marketing & Creative** | **Researcher** (campaign brief), **Copilot Chat** (brand-safe copy, brand-risk pass), **PowerPoint** (exec presentation), **Word** (one-pager) | Deep Excel analysis, heavy image gen (their creative work lives in Adobe) |
+| **Marketing & Creative** | **Researcher** (market/competitive research, campaign brief), **Copilot Chat** (claim substantiation, brand-safe copy, event comms, brand-risk pass), **PowerPoint** (exec presentation), **Word** (one-pager) | Deep Excel analysis, heavy image gen (their creative work lives in Adobe) |
 | **Finance** | Copilot in **Excel** (overview, spreadsheet QA), **Copilot Chat / Analyst** (variance and anomaly analysis), **Word** (finance memo), **PowerPoint** (one summary slide) | Researcher, Outlook, Teams meeting features |
 | **Customer Service (ACs)** | **Copilot Chat** (thread summary, claimed-vs-confirmed split, exception list), **Word** (PTO handoff brief), **Outlook** (customer-ready reply), light **Excel** lookup | PowerPoint, Researcher, complex Excel modeling |
 | **Design & Engineering** | Copilot in **Excel** (data-quality review, opportunity aging), **Copilot Chat** (trend analysis), **Word** (leadership summary), **PowerPoint** (one slide) | Outlook workflows, image generation |
