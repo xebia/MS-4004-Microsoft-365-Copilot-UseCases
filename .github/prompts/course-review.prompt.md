@@ -63,15 +63,23 @@ structure across labs.
 These blocks repeat near-verbatim across all seven labs. Preserve them; don't let this
 session drift:
 
-- Header: **Audience / Format / Level**. Format line is
+- Header: **Audience / Format / Level**, each as its own paragraph. Format line is
   `~60 minutes of hands-on (up to ~75 if your group goes deep), inside a ~90-minute session.`
+  **Finance is the documented exception** at `~65–80 minutes of hands-on` with three
+  exercises; keep it in sync with the timing note on the README.
 - `## What you'll be able to do`
 - `## Learning arc` — the same 5-row, 2-exercise comparison table
   (You're doing / Copilot's job / Your job / Stakes / You leave with), followed by the two
   beat lines: *"prompt → read it critically → keep what's reusable"* and
   *"Source / Assumptions / Risk / Human check."*
-- `## Before you start` including the `<ARTIFACT_URL>` note
-- The `> **Where to find things**` blockquote
+- `## Before you start` — the compact four-part form: a pointer blockquote to
+  [home page setup](../../README.md#before-your-session) naming this lab's apps and agents,
+  then **1.** the OneDrive folder, **2.** a `File | What it is | Link` table of **Save file**
+  links to `https://github.com/xebia/MS-4004-Microsoft-365-Copilot-UseCases/raw/main/data/`,
+  and **3.** the "open `.xlsx` as-is" note where the lab uses workbooks. Each session links
+  **only its own files**. Generic setup — prerequisites, right-click download mechanics, the
+  ZIP fallback, and the "Where to find things" reference — lives on the README and must
+  **not** be repeated here.
 - The `> **Copilot capabilities in this lab:**` blockquote
 - `## The one rule to protect` — **Copilot assists. A human validates.**
 - **Ex.1 Task 1** always teaches the same two habits: a custom instruction set via

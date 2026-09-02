@@ -35,10 +35,18 @@ Because it's fictional, you can practice freely. Nothing here is real customer o
 
 ## The Sessions
 
-Delivered in this order. Each lab runs about **60 minutes of hands-on** (up to ~75 min if
+> **First time here?** Read **[Before your session](#before-your-session)** further down
+> this page — about two minutes on prerequisites, downloading your files, and where
+> Copilot features live. Then pick your lab below.
+
+Delivered in this order. Most labs run about **60 minutes of hands-on** (up to ~75 min if
 your group wants to go deeper) inside a ~90-minute session — roughly 15 min Copilot
-refresher, the lab, then open Q&A. Every lab is two 30-minute exercises with the same
+refresher, the lab, then open Q&A. Most are two 30-minute exercises with the same
 shape: **find the truth, then act on it.**
+
+> **One exception on timing:** **Session 3 — Finance** is the long one — three exercises
+> and five data files, ~65–80 minutes of hands-on. Budget the full 90-minute session for
+> it and keep the Q&A short.
 
 - **[`Session 1 — Supply Chain / Logistics`](sessions/MS-4004.X_Supply_Chain_Logistics.md)** —
   read an ERP order/shipment export for delays, exceptions, and missing data, decide who
@@ -93,6 +101,66 @@ shape: **find the truth, then act on it.**
 
 ---
 
+## Before your session
+
+Do this once. It takes about two minutes and it applies to every lab.
+
+**1. Check you have what you need.** A licensed **Microsoft 365 Copilot** account and the
+desktop Office apps — **Excel, Word, PowerPoint, Outlook**, and **Copilot Chat**. Your
+session page names the ones that lab actually uses. Sessions 2, 6, and 7 also use the
+**Researcher** agent; session 3 uses the **Analyst** agent.
+
+**2. Make a folder for your lab.** Your session page gives you a folder name. Create it in
+**OneDrive** and put everything you download — and everything you create — inside it. That
+one habit is what keeps Copilot looking at the right material all session.
+
+**3. Download your session's files.** Each session page has a short table of **Save file**
+links — just the files that lab needs. For each one: **right-click** the link →
+**Save link as…** → browse to your lab folder → **Save**.
+
+> **Why right-click?** A plain left-click can hand the file to your browser to preview
+> instead of saving it, and you'll end up hunting through Downloads. Right-click →
+> **Save link as…** lets you drop it straight into the right folder the first time.
+>
+> *On a Mac, that's **Control-click** → **Download Linked File As…***
+>
+> **Prefer to grab everything at once?** Right-click here →
+> [Save the whole kit as a ZIP](https://github.com/xebia/MS-4004-Microsoft-365-Copilot-UseCases/archive/refs/heads/main.zip),
+> unzip it, and copy your session's files out of the `data` folder.
+
+**4. Open `.xlsx` files in Excel as-is — don't convert them to CSV.** Copilot in Excel
+needs the real workbook to analyze the data. The CSVs are just the raw source.
+
+### Where to find things
+
+If you're not sure where a Copilot feature lives:
+
+- **Copilot Chat** — the Microsoft 365 Copilot app, `m365.cloud.microsoft/chat`, or the
+  Copilot icon in Teams.
+- **Copilot in Word / Excel / PowerPoint** — open the file, then the **Home** tab →
+  **Copilot** button (far right of the ribbon). A chat pane opens on the right.
+- **Copilot in Outlook** — open or start a message, then the **Copilot** button on the
+  message toolbar (or **Draft with Copilot** in the message body).
+- **Agents (Researcher, Analyst)** — Copilot Chat → **Agents** in the left sidebar, or the
+  agent picker just above the prompt box.
+- **Attaching a file to a prompt** — the paperclip icon next to the Copilot Chat prompt
+  box, or drag the file onto the pane. You can attach more than one.
+- **Format as a table in Excel** — select your data and press **Ctrl+T**. Copilot in Excel
+  works far better on a real table.
+- **Switching models** — the model picker above or below the Copilot Chat prompt box.
+- **Custom instructions** — Copilot Chat → **Settings** (gear icon or your profile
+  picture, top right) → **Personalization**. *If your tenant doesn't show this, just paste
+  the instruction block at the top of your first prompt instead — same effect.*
+- **New chat** — the **New chat** or pencil icon at the top of the Copilot Chat pane.
+
+### The one rule to protect
+
+**Copilot assists. A human validates.** Every exercise in every lab ends the same way —
+**Source / Assumptions / Risk / Human check.** Copilot speeds up the work; you make the
+call. Each session sharpens this rule for its own stakes.
+
+---
+
 ## Shared-dataset
 
 Every lab pulls from one **master shipment/order dataset** plus a few linked reference files (customers, products, suppliers, inventory). The same delayed order a Supply Chain learner investigates is the same customer Finance reviews for payment risk and the same product Marketing plans a launch around...etc.
@@ -133,9 +201,6 @@ That means:
 | `AcmeBottling_Employee_Comm_Brief.docx` | 6 — Talent / HR |
 | `AcmeBottling_Customer_Contract_Sample.md` | 7 — Legal |
 | `AcmeBottling_Standard_Terms.md` | 7 — Legal |
-
-> **Open the `.xlsx` files in Excel as-is — don't convert them to CSV.** Copilot in Excel
-> needs the real workbook to analyze the data. The CSVs are just the raw source.
 
 *Running or writing a lab? The [company kit](Acme_Bottling_Company_Kit.md) has the full
 cast, the data dictionary, and the role → feature map.*
