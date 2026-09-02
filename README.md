@@ -56,9 +56,11 @@ shape: **find the truth, then act on it.**
 
 - **[`Session 3 — Finance`](sessions/MS-4004.X_Finance.md)** — find variance drivers and
   anomalies in monthly actuals with the Analyst agent, make Copilot show its arithmetic
-  and spot-check it, QA a messy AR aging sheet, then write a one-page CFO memo and a
-  single leadership slide. Includes monthly actuals, an AR aging sheet with planted
-  data-quality issues, the leadership audience profile, and the executive memo format.
+  and spot-check it, scrub a messy AR aging sheet into a documented rulebook and a regional
+  AR summary, then create a one-page CFO memo, a leadership slide, and a regional GM email
+  that matches the memo figure-for-figure. Includes monthly actuals, an AR aging sheet with
+  planted data-quality issues, the customers file, the leadership audience profile, and the
+  executive memo format.
 
 - **[`Session 4 — Customer Service (ACs)`](sessions/MS-4004.X_Customer_Service.md)** —
   summarize a long customer thread, split what the customer claimed from what our data

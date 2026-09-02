@@ -88,7 +88,7 @@ All live in the `data/` folder of the repo. **Every filename starts with `AcmeBo
 |------|-----|------------|
 | `AcmeBottling_Campaign_Goals.md` | Marketing & Creative | Launch input brief with approved proof points — one of which deliberately doesn't reconcile with the product catalog. |
 | `AcmeBottling_Finance_Monthly_Actuals.xlsx` | Finance | Budget vs actual by region and product line, plus a YTD tab. |
-| `AcmeBottling_Finance_AR_Aging.xlsx` | Finance | AR aging sheet with planted data-quality issues. |
+| `AcmeBottling_Finance_AR_Aging.xlsx` | Finance | AR aging sheet with planted data-quality issues; scrubbed and then rolled up by region using `AcmeBottling_Customers.csv`. |
 | `AcmeBottling_Leadership_Audience_Profile.docx` | Finance | Who the memo is for and what "good" looks like. |
 | `AcmeBottling_Executive_Memo_Format.docx` | Finance | The memo structure the Word output must match. |
 | `AcmeBottling_Customer_Thread.md` | Customer Service | Long Blue Ridge Springs email thread about ORD-5006. |
