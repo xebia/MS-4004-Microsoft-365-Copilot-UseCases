@@ -39,15 +39,6 @@ Because it's fictional, you can practice freely. Nothing here is real customer o
 > this page — about two minutes on prerequisites, downloading your files, and where
 > Copilot features live. Then pick your lab below.
 
-Delivered in this order. Most labs run about **60 minutes of hands-on** (up to ~75 min if
-your group wants to go deeper) inside a ~90-minute session — roughly 15 min Copilot
-refresher, the lab, then open Q&A. Most are two 30-minute exercises with the same
-shape: **find the truth, then act on it.**
-
-> **One exception on timing:** **Session 3 — Finance** is the long one — three exercises
-> and five data files, ~65–80 minutes of hands-on. Budget the full 90-minute session for
-> it and keep the Q&A short.
-
 - **[`Session 1 — Supply Chain / Logistics`](sessions/MS-4004.X_Supply_Chain_Logistics.md)** —
   read an ERP order/shipment export for delays, exceptions, and missing data, decide who
   owns each next step (Acme, supplier, customer, carrier), then produce a manager status
