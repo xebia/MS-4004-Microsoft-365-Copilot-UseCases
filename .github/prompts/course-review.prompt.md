@@ -92,6 +92,14 @@ session drift:
   stakes and closes on source / assumptions / risk / human check.
 - **Ex.1 Task 1** always teaches the same two habits: a custom instruction set via
   Copilot Chat → Settings → Personalization, and a clean folder / new chat.
+- **No cross-app clipboard dances.** Copilot's context stops at the app boundary, so a
+  prompt in Word/PowerPoint that says "from my brief/findings/memo" without giving it the
+  source produces confidently invented content. The fix is always a **file**, never a
+  `[PASTE]` slot: if the source is a provided lab file, reference it in the Copilot pane
+  with **`/`**; if it's something the learner generated in chat, add a step that **saves it
+  into the lab folder** first, then reference that. `[PASTE]` placeholders are allowed
+  **only** in the `## Prompt Library` templates and for short decisions the learner types
+  themselves. Never ask a learner to hold two things on one clipboard.
 - **Chat-continuity cues.** Any step whose prompt back-references earlier output ("those
   competencies", "that research", "from this brief") or relies on a file attached in an
   earlier step MUST open with a bolded cue, in one of exactly two forms:
