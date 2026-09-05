@@ -105,21 +105,30 @@ session page names the ones that lab actually uses. Sessions 2, 6, and 7 also us
 **OneDrive** and put everything you download — and everything you create — inside it. That
 one habit is what keeps Copilot looking at the right material all session.
 
-**3. Download your session's files.** Each session page has a short table of **Save file**
-links — just the files that lab needs. For each one: **right-click** the link →
-**Save link as…** → browse to your lab folder → **Save**.
+**3. Download your session's lab kit.** Each session page has one **Download the lab kit
+(ZIP)** link holding just the files that lab needs. Click it — it saves to your
+**Downloads** folder.
 
-> **Why right-click?** A plain left-click can hand the file to your browser to preview
-> instead of saving it, and you'll end up hunting through Downloads. Right-click →
-> **Save link as…** lets you drop it straight into the right folder the first time.
->
-> *On a Mac, that's **Control-click** → **Download Linked File As…***
->
-> **Prefer to grab everything at once?** Right-click here →
-> [Save the whole kit as a ZIP](https://github.com/xebia/MS-4004-Microsoft-365-Copilot-UseCases/archive/refs/heads/main.zip),
-> unzip it, and copy your session's files out of the `data` folder.
+**4. Unzip the kit into your lab folder.** Right-click the downloaded ZIP → **Extract
+All…** → browse to the lab folder you made in step 2 → **Extract**. Your session page
+lists exactly which files you should see afterward — check them off before you start.
 
-**4. Open `.xlsx` files in Excel as-is — don't convert them to CSV.** Copilot in Excel
+> *On a Mac, double-click the ZIP, then drag the files into your lab folder.*
+>
+> **One ZIP per lab, on purpose.** You get only your session's files, already named
+> correctly, sitting in the one folder Copilot should be looking at.
+>
+> **If a kit link ever gives you trouble:** right-click here →
+> [save the whole course as a ZIP](https://github.com/xebia/MS-4004-Microsoft-365-Copilot-UseCases/archive/refs/heads/main.zip),
+> unzip it, and copy your session's files out of the `data` folder. Emergency fallback
+> only — it pulls down the entire course.
+
+**5. Click Enable Editing the first time you open an Office file.** Anything downloaded
+from the internet opens in **Protected View** — a yellow bar across the top of Excel or
+Word. Copilot can't work on a file that's still locked down, and it looks exactly like
+"Copilot is broken." One click fixes it.
+
+**6. Open `.xlsx` files in Excel as-is — don't convert them to CSV.** Copilot in Excel
 needs the real workbook to analyze the data. The CSVs are just the raw source.
 
 ### Where to find things

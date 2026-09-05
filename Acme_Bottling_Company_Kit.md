@@ -169,6 +169,13 @@ role's stakes.
 
 ## 6. Facilitator reminders (all labs)
 
+- **Lab kits are prebuilt artifacts.** Each session downloads one ZIP from `kits/` holding
+  only that lab's files, flat, correctly named. **If anything in `data/` changes, rebuild
+  the affected kit** — the ZIPs are committed and will otherwise go stale silently. Never
+  link learners to per-file `raw/main/data/` URLs: GitHub serves `.md` and `.csv` as
+  `text/plain`, so those links open in the browser instead of saving.
+- **Protected View:** downloaded Office files open locked. Learners must click **Enable
+  Editing** or Copilot in Excel/Word does nothing — and it reads as "Copilot is broken."
 - **Data hygiene:** teach one folder / one clean chat per customer or scenario so Copilot
   references only the right material.
 - **Capture agent ideas:** if a learner surfaces a big "this would change how we work

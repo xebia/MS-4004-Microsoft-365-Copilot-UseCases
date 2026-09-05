@@ -72,13 +72,17 @@ session drift:
   (You're doing / Copilot's job / Your job / Stakes / You leave with), followed by the two
   beat lines: *"prompt → read it critically → keep what's reusable"* and
   *"Source / Assumptions / Risk / Human check."*
-- `## Before you start` — the compact four-part form: a pointer blockquote to
+- `## Before you start` — the compact form: a pointer blockquote to
   [home page setup](../../README.md#before-your-session) naming this lab's apps and agents,
-  then **1.** the OneDrive folder, **2.** a `File | What it is | Link` table of **Save file**
-  links to `https://github.com/xebia/MS-4004-Microsoft-365-Copilot-UseCases/raw/main/data/`,
-  and **3.** the "open `.xlsx` as-is" note where the lab uses workbooks. Each session links
-  **only its own files**. Generic setup — prerequisites, right-click download mechanics, the
-  ZIP fallback, and the "Where to find things" reference — lives on the README and must
+  then **1.** the OneDrive folder, **2.** a single **Download the lab kit (ZIP)** link to
+  `https://github.com/xebia/MS-4004-Microsoft-365-Copilot-UseCases/raw/main/kits/`, **3.**
+  the Extract All… step naming that lab's folder plus a `File | What it is` table of what
+  should land in it, and **4.** the "open `.xlsx` as-is" / Protected View → **Enable
+  Editing** note where the lab uses Office files. Close with the whole-course ZIP as an
+  **emergency fallback only**. Each session links **only its own kit** — never per-file
+  `raw/main/data/` links, which GitHub serves as `text/plain` for `.md`/`.csv` and which
+  therefore open in the browser instead of saving. Generic setup — prerequisites, unzip
+  mechanics, and the "Where to find things" reference — lives on the README and must
   **not** be repeated here.
 - The `> **Copilot capabilities in this lab:**` blockquote
 - A `## What this means …` section — the **role-specific** form of *Copilot assists, a human
