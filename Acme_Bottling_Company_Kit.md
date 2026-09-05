@@ -161,6 +161,12 @@ that genuinely help that role.** No feature tours, no filler. This map is the gu
 assumptions made, risk, and required human check. This is non-negotiable across all
 seven sessions.
 
+The rule itself is stated once, on the README. Each lab then restates it **in its own
+terms** under a role-specific heading (`## What this means before a number is reported`,
+`## What this means when it affects someone's job`, and so on) — naming the concrete thing
+that lab's learner must check. Don't repeat the generic wording in a session; give it the
+role's stakes.
+
 ## 6. Facilitator reminders (all labs)
 
 - **Data hygiene:** teach one folder / one clean chat per customer or scenario so Copilot

@@ -81,7 +81,11 @@ session drift:
   ZIP fallback, and the "Where to find things" reference — lives on the README and must
   **not** be repeated here.
 - The `> **Copilot capabilities in this lab:**` blockquote
-- `## The one rule to protect` — **Copilot assists. A human validates.**
+- A `## What this means …` section — the **role-specific** form of *Copilot assists, a human
+  validates*, named for what this lab's learner must check before acting (e.g.
+  `## What this means before a number is reported`). The generic rule is stated once on the
+  README and must **not** be restated verbatim here; each session gives it that role's
+  stakes and closes on source / assumptions / risk / human check.
 - **Ex.1 Task 1** always teaches the same two habits: a custom instruction set via
   Copilot Chat → Settings → Personalization, and a clean folder / new chat.
 - `### Validation checkpoint` closing every exercise: Source / Assumptions / Risk / Human check.
