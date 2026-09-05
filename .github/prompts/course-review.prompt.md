@@ -92,6 +92,14 @@ session drift:
   stakes and closes on source / assumptions / risk / human check.
 - **Ex.1 Task 1** always teaches the same two habits: a custom instruction set via
   Copilot Chat → Settings → Personalization, and a clean folder / new chat.
+- **Chat-continuity cues.** Any step whose prompt back-references earlier output ("those
+  competencies", "that research", "from this brief") or relies on a file attached in an
+  earlier step MUST open with a bolded cue, in one of exactly two forms:
+  **`Stay in the same <chat | Excel Copilot pane | Word Copilot pane | …>`** when the
+  learner never left that surface, or **`Go back to the same <…>`** when they worked
+  somewhere else in between. No other phrasings ("Still in the same…", "In the same
+  chat,", "Back in the same…", "paste this into the same chat"). Steps that deliberately
+  start a **New chat** are exempt \u2014 never add a continuity cue to those.
 - `### Validation checkpoint` closing every exercise: Source / Assumptions / Risk / Human check.
 - The **last task of Exercise 2** is always "Save your prompt library."
 - `## Prompt Library (your leave-behind)` with `[PLACEHOLDER]` slots.
