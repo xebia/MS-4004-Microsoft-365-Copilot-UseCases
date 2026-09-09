@@ -107,7 +107,7 @@ session drift:
   learner never left that surface, or **`Go back to the same <…>`** when they worked
   somewhere else in between. No other phrasings ("Still in the same…", "In the same
   chat,", "Back in the same…", "paste this into the same chat"). Steps that deliberately
-  start a **New chat** are exempt \u2014 never add a continuity cue to those.
+  start a **New chat** are exempt, never add a continuity cue to those.
 - `### Validation checkpoint` closing every exercise: Source / Assumptions / Risk / Human check.
 - The **last task of Exercise 2** is always "Save your prompt library."
 - `## Prompt Library (your leave-behind)` with `[PLACEHOLDER]` slots.
