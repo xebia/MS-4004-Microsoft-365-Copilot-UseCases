@@ -54,10 +54,10 @@ the kit's defect note so facilitators aren't blindsided.
 
 ### 4. Sixty-minute timing
 The lab must be honestly deliverable in ~60 minutes of hands-on, ~30 per exercise. Build a
-per-task minute budget that sums to exactly 60 and put it in `## Facilitator notes` as a
-small table, along with guidance on **what to cut if running long and what must never be
-cut**. Do **not** put time boxes on individual task headings — that breaks the shared
-structure across labs.
+per-task minute budget that sums to exactly 60, along with guidance on **what to cut if
+running long and what must never be cut**, and report it **in your review summary to me** —
+not in the lab file. Do **not** put time boxes on individual task headings, and do **not**
+add a facilitator section to carry the budget; both break the shared structure across labs.
 
 ### 5. Shared content
 These blocks repeat near-verbatim across all seven labs. Preserve them; don't let this
@@ -110,10 +110,12 @@ session drift:
   start a **New chat** are exempt, never add a continuity cue to those.
 - `### Validation checkpoint` closing every exercise: Source / Assumptions / Risk / Human check.
 - The **last task of Exercise 2** is always "Save your prompt library."
-- `## Prompt Library (your leave-behind)` with `[PLACEHOLDER]` slots.
-- `## Facilitator notes` — including the "capture agent ideas → route to **Chris Bartlow**"
-  bullet and the "keep agents future-state" rule.
-- `## Recommended close (read this)` — uses the exact wording from kit section 7.
+- `## Prompt Library (your leave-behind)` with `[PLACEHOLDER]` slots — and **the lab ends
+  here.** No facilitator notes, no recommended close, no appendix. Every session file's last
+  line is the closing note under the final prompt. Facilitator-only material (timing,
+  teachable moments, agent-idea capture, the spoken close) lives in
+  `Acme_Bottling_Company_Kit.md` and in your review summary — never in the learner-facing
+  lab.
 - Recurring phrase: *"This is a first pass, not an approval."*
 
 ## Hard rules

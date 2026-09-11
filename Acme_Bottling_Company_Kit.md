@@ -184,7 +184,10 @@ role's stakes.
   the most likely to raise ambitious ones.)
 - **Keep agents future-state.** These labs are current-state Copilot only.
 
-## 7. Recommended close (use this exact wording, every session)
+## 7. Recommended close (facilitator script — say it, don't write it into the lab)
+
+Session files end at the Prompt Library. This close is spoken by the facilitator; use this
+exact wording, every session.
 
 - Today we focused on what your team can do now with Microsoft 365 Copilot.
 - The next opportunity is to identify repeatable patterns that could become governed agent

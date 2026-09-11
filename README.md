@@ -140,9 +140,11 @@ If you're not sure where a Copilot feature lives:
 - **Opening a desktop Office app** — press **Start** and type the app name (*PowerPoint*,
   *Word*, *Excel*, *Outlook*), or use the app launcher (the grid icon, top-left) in
   Microsoft 365 on the web. When a lab has you create a new file, save it into your lab
-  folder right away rather than at the end.
+  folder right away rather than at the end — **Create a copy → Create a copy online** → your
+  lab folder → name it.
 - **Copilot in Word / Excel / PowerPoint** — open the file, then the **Home** tab →
-  **Copilot** button (far right of the ribbon). A chat pane opens on the right.
+  **Copilot** button (lower right corner or right of the ribbon). A chat pane opens on the
+  right.
 - **Copilot in Outlook** — open or start a message, then the **Copilot** button on the
   message toolbar (or **Draft with Copilot** in the message body).
 - **Agents (Researcher, Analyst)** — Copilot Chat → **Agents** in the left sidebar, or the
