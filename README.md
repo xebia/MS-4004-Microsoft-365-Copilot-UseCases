@@ -55,11 +55,13 @@ Because it's fictional, you can practice freely. Nothing here is real customer o
 
 - **[`Session 3 — Finance`](sessions/MS-4004.X_Finance.md)** — find variance drivers and
   anomalies in monthly actuals with the Analyst agent, make Copilot show its arithmetic
-  and spot-check it, scrub a messy AR aging sheet into a documented rulebook and a regional
-  AR summary, then create a one-page CFO memo, a leadership slide, and a regional GM email
-  that matches the memo figure-for-figure. Includes monthly actuals, an AR aging sheet with
-  planted data-quality issues, the customers file, the leadership audience profile, and the
-  executive memo format.
+  and spot-check it, attribute the variances to vendor risk using the supplier file — and
+  make Copilot say what that data *can't* tell you — scrub a messy AR aging sheet into a
+  documented rulebook and a regional AR summary, then create a one-page CFO memo, a
+  leadership slide, and a regional GM email that matches the memo figure-for-figure.
+  Includes monthly actuals, an AR aging sheet with planted data-quality issues, the
+  customers and suppliers files, the leadership audience profile, and the executive memo
+  format.
 
 - **[`Session 4 — Customer Service (ACs)`](sessions/MS-4004.X_Customer_Service.md)** —
   summarize a long customer thread, split what the customer claimed from what our data
@@ -68,7 +70,9 @@ Because it's fictional, you can practice freely. Nothing here is real customer o
   orders export, and master reference.
 
 - **[`Session 5 — Design & Engineering`](sessions/MS-4004.X_Design_and_Engineering.md)** —
-  analyze a CRM/opportunity export for aging deals and trends, force Copilot to show how
+  analyze a CRM/opportunity export for aging deals and trends, compute win rate, open
+  pipeline value and a weighted forecast — supplying the stage weights yourself so the
+  assumption is visible — chart a result with its own row counts, force Copilot to show how
   many rows each trend rests on, flag data-quality gaps, and write a leadership summary +
   one slide that keeps its uncertainty. Includes an opportunities export (with intentional
   messy rows) and the master reference. This one carries Kyle's note that it's the group
@@ -77,14 +81,17 @@ Because it's fictional, you can practice freely. Nothing here is real customer o
 - **[`Session 6 — Talent / HR`](sessions/MS-4004.X_Talent_HR.md)** — turn a Logistics
   Coordinator requisition into a competency-mapped, bias-checked interview guide, build a
   30-60-90 onboarding plan from messy manager notes, turn a skills gap into a prioritized
-  learning path, and draft a change announcement in three formats. Includes the role
-  description, onboarding notes, skills list, and change-communication brief.
+  learning path, draft a change announcement in three formats, and build the manager Q&A
+  that answers the uncomfortable questions honestly instead of reassuring past them.
+  Includes the role description, onboarding notes, skills list, and change-communication
+  brief.
 
 - **[`Session 7 — Legal`](sessions/MS-4004.X_Legal.md)** — summarize a contract with
   Researcher and cite every clause, compare it clause-by-clause against Acme's
-  standard-terms playbook, flag missing or non-standard terms with risk levels, and produce
-  an executive briefing plus negotiation talking points. Includes a sanitized customer
-  contract and the standard-terms playbook, plus the cite-the-playbook context workaround.
+  standard-terms playbook, flag missing or non-standard terms with risk levels, run cited
+  market-norm research that stays labeled as background rather than advice, and produce an
+  executive briefing plus negotiation talking points. Includes a sanitized customer contract
+  and the standard-terms playbook, plus the cite-the-playbook context workaround.
 
 > **Note on IT:** The IT group is a **recap and debrief conversation**, not a hands-on
 > lab. We walk their team through what everyone else learned and flag agent-readiness

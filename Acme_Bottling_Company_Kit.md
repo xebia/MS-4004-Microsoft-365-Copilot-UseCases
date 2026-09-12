@@ -79,7 +79,7 @@ All live in the `data/` folder of the repo. **Every filename starts with `AcmeBo
 | `AcmeBottling_Master_Reference` | .xlsx | Six tabs in one workbook: Customers, Products, Suppliers, Inventory, Orders, Opportunities. |
 | `AcmeBottling_Customers` | .csv | Accounts, segments, regions, account managers, terms, tier. |
 | `AcmeBottling_Products` | .csv | SKU catalog, sizes, materials, colors, unit cost. |
-| `AcmeBottling_Suppliers` | .csv | Suppliers, what they supply, on-time status, quality score. |
+| `AcmeBottling_Suppliers` | .csv | Suppliers, what they supply, on-time status, quality score. Supply Chain uses it for delay attribution; Finance uses it for vendor-risk exposure. Note that **Pumps & Sprayers has no supplier in this file** — a deliberate unmatched row. |
 | `AcmeBottling_Inventory` | .csv | On-hand, committed, available, reorder flags. |
 
 **Role-specific** — used by exactly one lab each
@@ -143,11 +143,11 @@ that genuinely help that role.** No feature tours, no filler. This map is the gu
 |---------|----------------------------------|-----------------------|
 | **Supply Chain / Logistics** | Copilot in **Excel** (analyze the export), **Copilot Chat** (exception analysis, follow-up questions), **Word** (status briefing), **Outlook** (escalation email) | Researcher, PowerPoint decks, image generation |
 | **Marketing & Creative** | **Researcher** (market/competitive research, campaign brief), **Copilot Chat** (claim substantiation, brand-safe copy, event comms, brand-risk pass), **PowerPoint** (exec presentation), **Word** (one-pager) | Deep Excel analysis, heavy image gen (their creative work lives in Adobe) |
-| **Finance** | Copilot in **Excel** (overview, spreadsheet QA), **Copilot Chat / Analyst** (variance and anomaly analysis), **Word** (finance memo), **PowerPoint** (one summary slide) | Researcher, Outlook, Teams meeting features |
+| **Finance** | Copilot in **Excel** (overview, spreadsheet QA), **Copilot Chat / Analyst** (variance and anomaly analysis, vendor-risk attribution), **Word** (finance memo), **PowerPoint** (one summary slide) | Researcher, Outlook, Teams meeting features |
 | **Customer Service (ACs)** | **Copilot Chat** (thread summary, claimed-vs-confirmed split, exception list), **Word** (PTO handoff brief), **Outlook** (customer-ready reply), light **Excel** lookup | PowerPoint, Researcher, complex Excel modeling |
-| **Design & Engineering** | Copilot in **Excel** (data-quality review, opportunity aging), **Copilot Chat** (trend analysis), **Word** (leadership summary), **PowerPoint** (one slide) | Outlook workflows, image generation |
-| **Talent / HR** | **Researcher** (role analysis, interview guide, bias pass), **Word** (onboarding plan, employee comms), **Excel** (skills-gap learning path) | Outlook, PowerPoint decks, image generation |
-| **Legal** | **Researcher** (contract summary with citations), **Copilot Chat** (clause comparison vs. standard language, conclusion check), **Word** (executive briefing, talking points) | Excel, PowerPoint, image generation |
+| **Design & Engineering** | Copilot in **Excel** (data-quality review, opportunity aging, computed metrics and weighted forecast, one chart), **Copilot Chat** (trend analysis), **Word** (leadership summary), **PowerPoint** (one slide) | Outlook workflows, image generation |
+| **Talent / HR** | **Researcher** (role analysis, interview guide, bias pass), **Word** (onboarding plan, employee comms, manager Q&A), **Excel** (skills-gap learning path) | Outlook, PowerPoint decks, image generation |
+| **Legal** | **Researcher** (contract summary with citations; separately, cited market-norm research labeled as background), **Copilot Chat** (clause comparison vs. standard language, conclusion check), **Word** (executive briefing, talking points) | Excel, PowerPoint, image generation |
 
 > **Every lab also teaches two habits, identically:** a **custom instruction** set in
 > Copilot Chat → Settings → Personalization as Task 1, and a **clean folder / new chat**
